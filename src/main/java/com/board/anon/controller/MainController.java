@@ -17,7 +17,7 @@ public class MainController {
     @Autowired
     private BoardService boardService;
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/board/list.do")
     public @ResponseBody
     List<BoardEntity> indexPage() {
         return boardService.allContents();
